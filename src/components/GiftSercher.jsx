@@ -1,3 +1,4 @@
+import propTypes from "prop-types";
 import { useState } from "react";
 
 export const GiftSercher = ({ onAddCategory }) => {
@@ -28,4 +29,8 @@ export const GiftSercher = ({ onAddCategory }) => {
       </button>
     </form>
   );
+};
+
+GiftSercher.propTypes = {
+  onAddCategory: propTypes.func.isRequired,
 };
